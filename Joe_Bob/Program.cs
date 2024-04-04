@@ -15,6 +15,21 @@ namespace Joe_Bob
 
             while (true)
             {
+                Console.Write("do you want play game(Y/N) : ");
+                string yn = Console.ReadLine();
+                if (yn == "Y")
+                {
+                    continue;
+                }
+                else if (yn == "N")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("check you coment!");
+                    return;
+                }
                 joe.WriteMyInfo();
                 bob.WriteMyInfo();
                 Console.Write("Enter an amount: ");
@@ -45,10 +60,6 @@ namespace Joe_Bob
                     Console.WriteLine("Please enter an amount (or a blank line to exit).");
                 }
 
-                if ()
-                {
-
-                }
             }
         }
     }
